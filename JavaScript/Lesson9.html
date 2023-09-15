@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="myDiv">
+       lorem <strong>ipsum</strong> lorem
+      </div>
+
+      <p id="myParagraph">lorem <strong>lo</strong> ipsum.</p>
+
+
+    <script>
+            var element = document.getElementById("myDiv");
+            var innerHTMLContent = element.innerHTML;
+            console.log(innerHTMLContent);
+            element.innerHTML = "<strong>  Changed Item. </strong> ";
+
+
+            var element = document.getElementById("myParagraph");
+            var innerTextContent = element.innerText;
+            console.log(innerTextContent);
+            element.innerText =  "<strong>  Changed Item. </strong> ";
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv">1 Example.</div>
+  
+    <p class="highlight">2 Example</p>
+
+    <p id="highlight">4 Example</p>
+
+
+    <ul>
+        <li class="list-item">etc 1</li>
+        <li class="list-item">etc 2</li>
+        <li class="list-item">etc 3</li>
+      </ul>
+
+    <p class="my-paragraph">Example 3.</p>
+    <p class="my-paragraph">Example 3.</p>
+    <p class="my-paragraph">Example 3.</p>
+    <p class="my-paragraph">Example 3.</p>
+
+
+ 
+
+
+    <script>
+        var myElement = document.getElementById("myDiv");
+        myElement.style.color = "blue"; 
+
+
+        var element = document.querySelector(".highlight");
+        element.style.backgroundColor = "yellow"; 
+
+        var element = document.querySelector("#highlight");
+        element.style.backgroundColor = "blue"; 
+
+
+        var listItems = document.querySelectorAll(".list-item");
+        listItems.forEach(function(item) {
+        item.style.fontWeight = "bold"; 
+        });
+
+        var elements = document.getElementsByClassName("my-paragraph");
+        elements[2].style.fontSize = "70px"; 
+
+
+      
+
+    </script>
+</body>
+</html>

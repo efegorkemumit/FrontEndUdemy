@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myButton">Click</button>
+
+    <script>
+        var button = document.getElementById("myButton");
+    
+        button.addEventListener("click", function() {
+            alert("Button Click!");
+        });
+    </script>
+
+
+
+
+
+
+
+<input type="text" id="myInput" placeholder="Enter Text">
+
+<p id="output"></p>
+
+<script>
+    var input = document.getElementById("myInput");
+    var output = document.getElementById("output");
+
+    input.addEventListener("input", function() {
+        output.textContent = "Value: " + input.value;
+    });
+</script>
+    
+</body>
+</html>
